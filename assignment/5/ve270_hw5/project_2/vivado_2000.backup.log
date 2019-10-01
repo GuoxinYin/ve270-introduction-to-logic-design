@@ -1,0 +1,1860 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed Oct 24 20:51:05 2018
+# Process ID: 2000
+# Current directory: C:/Users/89277/Desktop/ve270_hw5/project_2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7060 C:\Users\89277\Desktop\ve270_hw5\project_2\project_2.xpr
+# Log file: C:/Users/89277/Desktop/ve270_hw5/project_2/vivado.log
+# Journal file: C:/Users/89277/Desktop/ve270_hw5/project_2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/89277/Desktop/ve270_hw5/project_2/project_2.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 796.668 ; gain = 45.836
+update_compile_order -fileset sources_1
+file mkdir C:/Users/89277/Desktop/ve270_hw5/project_2/project_2.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/89277/Desktop/ve270_hw5/project_2/project_2.srcs/sim_1/new/Q2_test.v w ]
+add_files -fileset sim_1 C:/Users/89277/Desktop/ve270_hw5/project_2/project_2.srcs/sim_1/new/Q2_test.v
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/89277/Desktop/ve270_hw5/project_2/project_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'hw2' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/89277/Desktop/ve270_hw5/project_2/project_2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj hw2_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/89277/Desktop/ve270_hw5/project_2/project_2.srcs/sources_1/new/hw2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hw2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/89277/Desktop/ve270_hw5/project_2/project_2.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/89277/Desktop/ve270_hw5/project_2/project_2.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 5467cdf7646a4fd9b084de20791b641b --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot hw2_behav xil_defaultlib.hw2 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.hw2
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot hw2_behav
+
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/89277/Desktop/ve270_hw5/project_2/project_2.sim/sim_1/behav/xsim/xsim.dir/hw2_behav/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 55.465 ; gain = 1.203
+INFO: [Common 17-206] Exiting Webtalk at Wed Oct 24 21:07:35 2018...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:14 . Memory (MB): peak = 862.813 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '14' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/89277/Desktop/ve270_hw5/project_2/project_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "hw2_behav -key {Behavioral:sim_1:Functional:hw2} -tclbatch {hw2.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source hw2.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'hw2_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:21 . Memory (MB): peak = 862.813 ; gain = 0.000
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/89277/Desktop/ve270_hw5/project_2/project_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Q2_test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/89277/Desktop/ve270_hw5/project_2/project_2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Q2_test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/89277/Desktop/ve270_hw5/project_2/project_2.srcs/sim_1/new/Q2_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Q2_test
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/89277/Desktop/ve270_hw5/project_2/project_2.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 5467cdf7646a4fd9b084de20791b641b --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Q2_test_behav xil_defaultlib.Q2_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-2572] too many parameters for module instance UUT [C:/Users/89277/Desktop/ve270_hw5/project_2/project_2.srcs/sim_1/new/Q2_test.v:31]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.hw2
+Compiling module xil_defaultlib.Q2_test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Q2_test_behav
+
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/89277/Desktop/ve270_hw5/project_2/project_2.sim/sim_1/behav/xsim/xsim.dir/Q2_test_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/89277/Desktop/ve270_hw5/project_2/project_2.sim/sim_1/behav/xsim/xsim.dir/Q2_test_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed Oct 24 21:08:31 2018. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2018.2/doc/webtalk_introduction.html.
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 55.578 ; gain = 1.172
+INFO: [Common 17-206] Exiting Webtalk at Wed Oct 24 21:08:31 2018...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:15 . Memory (MB): peak = 865.594 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '15' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/89277/Desktop/ve270_hw5/project_2/project_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Q2_test_behav -key {Behavioral:sim_1:Functional:Q2_test} -tclbatch {Q2_test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Q2_test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Q2_test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:20 . Memory (MB): peak = 876.273 ; gain = 10.680
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 882.703 ; gain = 0.699
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/89277/Desktop/ve270_hw5/project_2/project_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Q2_test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/89277/Desktop/ve270_hw5/project_2/project_2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Q2_test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/89277/Desktop/ve270_hw5/project_2/project_2.srcs/sources_1/new/hw2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hw2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/89277/Desktop/ve270_hw5/project_2/project_2.srcs/sim_1/new/Q2_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Q2_test
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/89277/Desktop/ve270_hw5/project_2/project_2.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 5467cdf7646a4fd9b084de20791b641b --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Q2_test_behav xil_defaultlib.Q2_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-2572] too many parameters for module instance UUT [C:/Users/89277/Desktop/ve270_hw5/project_2/project_2.srcs/sim_1/new/Q2_test.v:31]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.hw2
+Compiling module xil_defaultlib.Q2_test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Q2_test_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/89277/Desktop/ve270_hw5/project_2/project_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Q2_test_behav -key {Behavioral:sim_1:Functional:Q2_test} -tclbatch {Q2_test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Q2_test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Q2_test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 883.922 ; gain = 1.219
+open_project C:/Users/89277/Desktop/ve270_hw5/project_1/project_1.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/89277/Desktop/ve270_hw5/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'sim_1' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/89277/Desktop/ve270_hw5/project_1/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj sim_1_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/89277/Desktop/ve270_hw5/project_1/project_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 727a42d20f68414e9e86a7c33f041bc4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot sim_1_behav xil_defaultlib.sim_1 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/89277/Desktop/ve270_hw5/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "sim_1_behav -key {Behavioral:sim_1:Functional:sim_1} -tclbatch {sim_1.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source sim_1.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'sim_1_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 920.563 ; gain = 8.070
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_project
+open_project C:/Users/89277/Desktop/ve270_hw5/project_3/project_3.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+update_compile_order -fileset sources_1
+file mkdir C:/Users/89277/Desktop/ve270_hw5/project_3/project_3.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/89277/Desktop/ve270_hw5/project_3/project_3.srcs/sim_1/new/Q3_test.v w ]
+add_files -fileset sim_1 C:/Users/89277/Desktop/ve270_hw5/project_3/project_3.srcs/sim_1/new/Q3_test.v
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/89277/Desktop/ve270_hw5/project_3/project_3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Q3_test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/89277/Desktop/ve270_hw5/project_3/project_3.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Q3_test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/89277/Desktop/ve270_hw5/project_3/project_3.srcs/sources_1/new/5_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Hw3
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/89277/Desktop/ve270_hw5/project_3/project_3.srcs/sim_1/new/Q3_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Q3_test
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/89277/Desktop/ve270_hw5/project_3/project_3.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/89277/Desktop/ve270_hw5/project_3/project_3.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 7233250901a24d8e860965760ff1fd8e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Q3_test_behav xil_defaultlib.Q3_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Hw3
+Compiling module xil_defaultlib.Q3_test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Q3_test_behav
+
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/89277/Desktop/ve270_hw5/project_3/project_3.sim/sim_1/behav/xsim/xsim.dir/Q3_test_behav/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 55.680 ; gain = 1.285
+INFO: [Common 17-206] Exiting Webtalk at Wed Oct 24 21:47:27 2018...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:12 . Memory (MB): peak = 924.230 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '12' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/89277/Desktop/ve270_hw5/project_3/project_3.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Q3_test_behav -key {Behavioral:sim_1:Functional:Q3_test} -tclbatch {Q3_test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Q3_test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Q3_test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:18 . Memory (MB): peak = 930.191 ; gain = 5.961
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:12 . Memory (MB): peak = 931.535 ; gain = 0.000
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/89277/Desktop/ve270_hw5/project_3/project_3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Q3_test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/89277/Desktop/ve270_hw5/project_3/project_3.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Q3_test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/89277/Desktop/ve270_hw5/project_3/project_3.srcs/sources_1/new/5_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Hw3
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/89277/Desktop/ve270_hw5/project_3/project_3.srcs/sim_1/new/Q3_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Q3_test
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/89277/Desktop/ve270_hw5/project_3/project_3.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 7233250901a24d8e860965760ff1fd8e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Q3_test_behav xil_defaultlib.Q3_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Hw3
+Compiling module xil_defaultlib.Q3_test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Q3_test_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/89277/Desktop/ve270_hw5/project_3/project_3.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Q3_test_behav -key {Behavioral:sim_1:Functional:Q3_test} -tclbatch {Q3_test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Q3_test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Q3_test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 931.969 ; gain = 0.434
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/89277/Desktop/ve270_hw5/project_3/project_3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Q3_test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/89277/Desktop/ve270_hw5/project_3/project_3.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Q3_test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/89277/Desktop/ve270_hw5/project_3/project_3.srcs/sources_1/new/5_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Hw3
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/89277/Desktop/ve270_hw5/project_3/project_3.srcs/sim_1/new/Q3_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Q3_test
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/89277/Desktop/ve270_hw5/project_3/project_3.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 7233250901a24d8e860965760ff1fd8e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Q3_test_behav xil_defaultlib.Q3_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Hw3
+Compiling module xil_defaultlib.Q3_test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Q3_test_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/89277/Desktop/ve270_hw5/project_3/project_3.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Q3_test_behav -key {Behavioral:sim_1:Functional:Q3_test} -tclbatch {Q3_test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Q3_test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Q3_test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 933.824 ; gain = 0.313
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_project
+open_project C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+update_compile_order -fileset sources_1
+file mkdir C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.srcs/sim_1/new/Q4_test.v w ]
+add_files -fileset sim_1 C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.srcs/sim_1/new/Q4_test.v
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Q4_test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Q4_test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.srcs/sources_1/new/hw4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hw4
+WARNING: [VRFC 10-2379] empty port in module declaration [C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.srcs/sources_1/new/hw4.v:25]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.srcs/sim_1/new/Q4_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Q4_test
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto dde93e2770984043a16b0365ec55a364 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Q4_test_behav xil_defaultlib.Q4_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-2572] too many parameters for module instance UUT [C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.srcs/sim_1/new/Q4_test.v:31]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.hw4
+Compiling module xil_defaultlib.Q4_test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Q4_test_behav
+
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.sim/sim_1/behav/xsim/xsim.dir/Q4_test_behav/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 55.594 ; gain = 1.172
+INFO: [Common 17-206] Exiting Webtalk at Wed Oct 24 22:10:58 2018...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:16 . Memory (MB): peak = 933.980 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '15' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Q4_test_behav -key {Behavioral:sim_1:Functional:Q4_test} -tclbatch {Q4_test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Q4_test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Q4_test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:21 . Memory (MB): peak = 938.840 ; gain = 4.859
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:13 . Memory (MB): peak = 940.043 ; gain = 0.457
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Q4_test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Q4_test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.srcs/sources_1/new/hw4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hw4
+WARNING: [VRFC 10-2379] empty port in module declaration [C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.srcs/sources_1/new/hw4.v:25]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.srcs/sim_1/new/Q4_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Q4_test
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto dde93e2770984043a16b0365ec55a364 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Q4_test_behav xil_defaultlib.Q4_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-2572] too many parameters for module instance UUT [C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.srcs/sim_1/new/Q4_test.v:31]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.hw4
+Compiling module xil_defaultlib.Q4_test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Q4_test_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Q4_test_behav -key {Behavioral:sim_1:Functional:Q4_test} -tclbatch {Q4_test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Q4_test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Q4_test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 940.266 ; gain = 0.223
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Q4_test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Q4_test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.srcs/sources_1/new/hw4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hw4
+WARNING: [VRFC 10-2379] empty port in module declaration [C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.srcs/sources_1/new/hw4.v:25]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.srcs/sim_1/new/Q4_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Q4_test
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto dde93e2770984043a16b0365ec55a364 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Q4_test_behav xil_defaultlib.Q4_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-2572] too many parameters for module instance UUT [C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.srcs/sim_1/new/Q4_test.v:31]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.hw4
+Compiling module xil_defaultlib.Q4_test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Q4_test_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Q4_test_behav -key {Behavioral:sim_1:Functional:Q4_test} -tclbatch {Q4_test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Q4_test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Q4_test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 941.410 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Q4_test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Q4_test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.srcs/sources_1/new/hw4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hw4
+WARNING: [VRFC 10-2379] empty port in module declaration [C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.srcs/sources_1/new/hw4.v:25]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.srcs/sim_1/new/Q4_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Q4_test
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto dde93e2770984043a16b0365ec55a364 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Q4_test_behav xil_defaultlib.Q4_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-2572] too many parameters for module instance UUT [C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.srcs/sim_1/new/Q4_test.v:31]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.hw4
+Compiling module xil_defaultlib.Q4_test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Q4_test_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Q4_test_behav -key {Behavioral:sim_1:Functional:Q4_test} -tclbatch {Q4_test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Q4_test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Q4_test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 942.418 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Q4_test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Q4_test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.srcs/sources_1/new/hw4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hw4
+WARNING: [VRFC 10-2379] empty port in module declaration [C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.srcs/sources_1/new/hw4.v:25]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.srcs/sim_1/new/Q4_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Q4_test
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto dde93e2770984043a16b0365ec55a364 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Q4_test_behav xil_defaultlib.Q4_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-2572] too many parameters for module instance UUT [C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.srcs/sim_1/new/Q4_test.v:31]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.hw4
+Compiling module xil_defaultlib.Q4_test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Q4_test_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Q4_test_behav -key {Behavioral:sim_1:Functional:Q4_test} -tclbatch {Q4_test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Q4_test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Q4_test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 944.906 ; gain = 0.000
+current_project project_2
+current_sim simulation_3
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/89277/Desktop/ve270_hw5/project_2/project_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Q2_test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/89277/Desktop/ve270_hw5/project_2/project_2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Q2_test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/89277/Desktop/ve270_hw5/project_2/project_2.srcs/sources_1/new/hw2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hw2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/89277/Desktop/ve270_hw5/project_2/project_2.srcs/sim_1/new/Q2_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Q2_test
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/89277/Desktop/ve270_hw5/project_2/project_2.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 5467cdf7646a4fd9b084de20791b641b --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Q2_test_behav xil_defaultlib.Q2_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-2572] too many parameters for module instance UUT [C:/Users/89277/Desktop/ve270_hw5/project_2/project_2.srcs/sim_1/new/Q2_test.v:31]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.hw2
+Compiling module xil_defaultlib.Q2_test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Q2_test_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/89277/Desktop/ve270_hw5/project_2/project_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Q2_test_behav -key {Behavioral:sim_1:Functional:Q2_test} -tclbatch {Q2_test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Q2_test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Q2_test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 944.906 ; gain = 0.000
+current_project project_4
+current_sim simulation_12
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Q4_test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Q4_test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.srcs/sources_1/new/hw4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hw4
+WARNING: [VRFC 10-2379] empty port in module declaration [C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.srcs/sources_1/new/hw4.v:25]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.srcs/sim_1/new/Q4_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Q4_test
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto dde93e2770984043a16b0365ec55a364 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Q4_test_behav xil_defaultlib.Q4_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-2572] too many parameters for module instance UUT [C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.srcs/sim_1/new/Q4_test.v:31]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.hw4
+Compiling module xil_defaultlib.Q4_test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Q4_test_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Q4_test_behav -key {Behavioral:sim_1:Functional:Q4_test} -tclbatch {Q4_test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Q4_test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Q4_test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 944.906 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Q4_test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Q4_test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.srcs/sources_1/new/hw4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hw4
+WARNING: [VRFC 10-2379] empty port in module declaration [C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.srcs/sources_1/new/hw4.v:25]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.srcs/sim_1/new/Q4_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Q4_test
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto dde93e2770984043a16b0365ec55a364 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Q4_test_behav xil_defaultlib.Q4_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-2572] too many parameters for module instance UUT [C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.srcs/sim_1/new/Q4_test.v:31]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.hw4
+Compiling module xil_defaultlib.Q4_test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Q4_test_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Q4_test_behav -key {Behavioral:sim_1:Functional:Q4_test} -tclbatch {Q4_test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Q4_test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Q4_test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 944.906 ; gain = 0.000
+run all
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 946.617 ; gain = 1.457
+INFO: [Common 17-344] 'run' was cancelled
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Q4_test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Q4_test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.srcs/sources_1/new/hw4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hw4
+WARNING: [VRFC 10-2379] empty port in module declaration [C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.srcs/sources_1/new/hw4.v:25]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.srcs/sim_1/new/Q4_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Q4_test
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto dde93e2770984043a16b0365ec55a364 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Q4_test_behav xil_defaultlib.Q4_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-2572] too many parameters for module instance UUT [C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.srcs/sim_1/new/Q4_test.v:31]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.hw4
+Compiling module xil_defaultlib.Q4_test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Q4_test_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Q4_test_behav -key {Behavioral:sim_1:Functional:Q4_test} -tclbatch {Q4_test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Q4_test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Q4_test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 947.176 ; gain = 0.207
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Q4_test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Q4_test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.srcs/sources_1/new/hw4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hw4
+WARNING: [VRFC 10-2379] empty port in module declaration [C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.srcs/sources_1/new/hw4.v:25]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.srcs/sim_1/new/Q4_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Q4_test
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto dde93e2770984043a16b0365ec55a364 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Q4_test_behav xil_defaultlib.Q4_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-2572] too many parameters for module instance UUT [C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.srcs/sim_1/new/Q4_test.v:31]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.hw4
+Compiling module xil_defaultlib.Q4_test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Q4_test_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Q4_test_behav -key {Behavioral:sim_1:Functional:Q4_test} -tclbatch {Q4_test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Q4_test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Q4_test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 947.914 ; gain = 0.180
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Q4_test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Q4_test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.srcs/sources_1/new/hw4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hw4
+WARNING: [VRFC 10-2379] empty port in module declaration [C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.srcs/sources_1/new/hw4.v:25]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.srcs/sim_1/new/Q4_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Q4_test
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto dde93e2770984043a16b0365ec55a364 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Q4_test_behav xil_defaultlib.Q4_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-2572] too many parameters for module instance UUT [C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.srcs/sim_1/new/Q4_test.v:31]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.hw4
+Compiling module xil_defaultlib.Q4_test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Q4_test_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Q4_test_behav -key {Behavioral:sim_1:Functional:Q4_test} -tclbatch {Q4_test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Q4_test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Q4_test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 948.848 ; gain = 0.344
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Q4_test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Q4_test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.srcs/sources_1/new/hw4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hw4
+WARNING: [VRFC 10-2379] empty port in module declaration [C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.srcs/sources_1/new/hw4.v:25]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.srcs/sim_1/new/Q4_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Q4_test
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto dde93e2770984043a16b0365ec55a364 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Q4_test_behav xil_defaultlib.Q4_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-2572] too many parameters for module instance UUT [C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.srcs/sim_1/new/Q4_test.v:31]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.hw4
+Compiling module xil_defaultlib.Q4_test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Q4_test_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Q4_test_behav -key {Behavioral:sim_1:Functional:Q4_test} -tclbatch {Q4_test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Q4_test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Q4_test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 948.945 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Q4_test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Q4_test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.srcs/sources_1/new/hw4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hw4
+WARNING: [VRFC 10-2379] empty port in module declaration [C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.srcs/sources_1/new/hw4.v:25]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.srcs/sim_1/new/Q4_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Q4_test
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto dde93e2770984043a16b0365ec55a364 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Q4_test_behav xil_defaultlib.Q4_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-2572] too many parameters for module instance UUT [C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.srcs/sim_1/new/Q4_test.v:31]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.hw4
+Compiling module xil_defaultlib.Q4_test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Q4_test_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Q4_test_behav -key {Behavioral:sim_1:Functional:Q4_test} -tclbatch {Q4_test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Q4_test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Q4_test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 948.945 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Q4_test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Q4_test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.srcs/sources_1/new/hw4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hw4
+WARNING: [VRFC 10-2379] empty port in module declaration [C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.srcs/sources_1/new/hw4.v:25]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.srcs/sim_1/new/Q4_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Q4_test
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto dde93e2770984043a16b0365ec55a364 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Q4_test_behav xil_defaultlib.Q4_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-2572] too many parameters for module instance UUT [C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.srcs/sim_1/new/Q4_test.v:31]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.hw4
+Compiling module xil_defaultlib.Q4_test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Q4_test_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Q4_test_behav -key {Behavioral:sim_1:Functional:Q4_test} -tclbatch {Q4_test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Q4_test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Q4_test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 948.945 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Q4_test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Q4_test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.srcs/sources_1/new/hw4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hw4
+WARNING: [VRFC 10-2379] empty port in module declaration [C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.srcs/sources_1/new/hw4.v:25]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.srcs/sim_1/new/Q4_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Q4_test
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto dde93e2770984043a16b0365ec55a364 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Q4_test_behav xil_defaultlib.Q4_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-2572] too many parameters for module instance UUT [C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.srcs/sim_1/new/Q4_test.v:31]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.hw4
+Compiling module xil_defaultlib.Q4_test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Q4_test_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Q4_test_behav -key {Behavioral:sim_1:Functional:Q4_test} -tclbatch {Q4_test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Q4_test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Q4_test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 949.266 ; gain = 0.203
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Q4_test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Q4_test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.srcs/sources_1/new/hw4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hw4
+WARNING: [VRFC 10-2379] empty port in module declaration [C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.srcs/sources_1/new/hw4.v:25]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.srcs/sim_1/new/Q4_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Q4_test
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto dde93e2770984043a16b0365ec55a364 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Q4_test_behav xil_defaultlib.Q4_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-2572] too many parameters for module instance UUT [C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.srcs/sim_1/new/Q4_test.v:31]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.hw4
+Compiling module xil_defaultlib.Q4_test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Q4_test_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Q4_test_behav -key {Behavioral:sim_1:Functional:Q4_test} -tclbatch {Q4_test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Q4_test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Q4_test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 949.824 ; gain = 0.180
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Q4_test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Q4_test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.srcs/sources_1/new/hw4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hw4
+WARNING: [VRFC 10-2379] empty port in module declaration [C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.srcs/sources_1/new/hw4.v:25]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.srcs/sim_1/new/Q4_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Q4_test
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto dde93e2770984043a16b0365ec55a364 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Q4_test_behav xil_defaultlib.Q4_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-2572] too many parameters for module instance UUT [C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.srcs/sim_1/new/Q4_test.v:31]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.hw4
+Compiling module xil_defaultlib.Q4_test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Q4_test_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Q4_test_behav -key {Behavioral:sim_1:Functional:Q4_test} -tclbatch {Q4_test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Q4_test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Q4_test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 951.211 ; gain = 0.422
+open_project C:/Users/89277/Desktop/ve270_hw5/project_5/project_5.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/89277/Desktop/ve270_hw5/project_5/project_5.srcs/sim_1/new/Q5_test.v w ]
+add_files -fileset sim_1 C:/Users/89277/Desktop/ve270_hw5/project_5/project_5.srcs/sim_1/new/Q5_test.v
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/89277/Desktop/ve270_hw5/project_5/project_5.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'hw5' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/89277/Desktop/ve270_hw5/project_5/project_5.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj hw5_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/89277/Desktop/ve270_hw5/project_5/project_5.srcs/sources_1/new/hw5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hw5
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/89277/Desktop/ve270_hw5/project_5/project_5.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/89277/Desktop/ve270_hw5/project_5/project_5.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto e8c6120328a84b90bb0a942493145817 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot hw5_behav xil_defaultlib.hw5 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.hw5
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot hw5_behav
+
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/89277/Desktop/ve270_hw5/project_5/project_5.sim/sim_1/behav/xsim/xsim.dir/hw5_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/89277/Desktop/ve270_hw5/project_5/project_5.sim/sim_1/behav/xsim/xsim.dir/hw5_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Thu Oct 25 00:41:35 2018. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2018.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Thu Oct 25 00:41:35 2018...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 1136.555 ; gain = 3.188
+INFO: [USF-XSim-69] 'elaborate' step finished in '9' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/89277/Desktop/ve270_hw5/project_5/project_5.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "hw5_behav -key {Behavioral:sim_1:Functional:hw5} -tclbatch {hw5.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source hw5.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'hw5_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 1141.555 ; gain = 8.188
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/89277/Desktop/ve270_hw5/project_5/project_5.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Q5_test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/89277/Desktop/ve270_hw5/project_5/project_5.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Q5_test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/89277/Desktop/ve270_hw5/project_5/project_5.srcs/sources_1/new/hw5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hw5
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/89277/Desktop/ve270_hw5/project_5/project_5.srcs/sim_1/new/Q5_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Q5_test
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/89277/Desktop/ve270_hw5/project_5/project_5.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto e8c6120328a84b90bb0a942493145817 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Q5_test_behav xil_defaultlib.Q5_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-2572] too many parameters for module instance UUT [C:/Users/89277/Desktop/ve270_hw5/project_5/project_5.srcs/sim_1/new/Q5_test.v:32]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.hw5
+Compiling module xil_defaultlib.Q5_test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Q5_test_behav
+
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/89277/Desktop/ve270_hw5/project_5/project_5.sim/sim_1/behav/xsim/xsim.dir/Q5_test_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/89277/Desktop/ve270_hw5/project_5/project_5.sim/sim_1/behav/xsim/xsim.dir/Q5_test_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Thu Oct 25 00:43:15 2018. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2018.2/doc/webtalk_introduction.html.
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 55.457 ; gain = 1.152
+INFO: [Common 17-206] Exiting Webtalk at Thu Oct 25 00:43:15 2018...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:11 . Memory (MB): peak = 1142.168 ; gain = 0.016
+INFO: [USF-XSim-69] 'elaborate' step finished in '11' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/89277/Desktop/ve270_hw5/project_5/project_5.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Q5_test_behav -key {Behavioral:sim_1:Functional:Q5_test} -tclbatch {Q5_test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Q5_test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Q5_test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:15 . Memory (MB): peak = 1150.305 ; gain = 8.207
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1150.875 ; gain = 0.023
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/89277/Desktop/ve270_hw5/project_5/project_5.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Q5_test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/89277/Desktop/ve270_hw5/project_5/project_5.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Q5_test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/89277/Desktop/ve270_hw5/project_5/project_5.srcs/sim_1/new/Q5_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Q5_test
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/89277/Desktop/ve270_hw5/project_5/project_5.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto e8c6120328a84b90bb0a942493145817 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Q5_test_behav xil_defaultlib.Q5_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-2572] too many parameters for module instance UUT [C:/Users/89277/Desktop/ve270_hw5/project_5/project_5.srcs/sim_1/new/Q5_test.v:32]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.hw5
+Compiling module xil_defaultlib.Q5_test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Q5_test_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/89277/Desktop/ve270_hw5/project_5/project_5.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Q5_test_behav -key {Behavioral:sim_1:Functional:Q5_test} -tclbatch {Q5_test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Q5_test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Q5_test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1151.023 ; gain = 0.148
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/89277/Desktop/ve270_hw5/project_5/project_5.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Q5_test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/89277/Desktop/ve270_hw5/project_5/project_5.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Q5_test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/89277/Desktop/ve270_hw5/project_5/project_5.srcs/sources_1/new/hw5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hw5
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/89277/Desktop/ve270_hw5/project_5/project_5.srcs/sim_1/new/Q5_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Q5_test
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/89277/Desktop/ve270_hw5/project_5/project_5.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto e8c6120328a84b90bb0a942493145817 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Q5_test_behav xil_defaultlib.Q5_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-2572] too many parameters for module instance UUT [C:/Users/89277/Desktop/ve270_hw5/project_5/project_5.srcs/sim_1/new/Q5_test.v:32]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.hw5
+Compiling module xil_defaultlib.Q5_test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Q5_test_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/89277/Desktop/ve270_hw5/project_5/project_5.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Q5_test_behav -key {Behavioral:sim_1:Functional:Q5_test} -tclbatch {Q5_test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Q5_test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Q5_test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1151.625 ; gain = 0.254
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/89277/Desktop/ve270_hw5/project_5/project_5.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Q5_test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/89277/Desktop/ve270_hw5/project_5/project_5.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Q5_test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/89277/Desktop/ve270_hw5/project_5/project_5.srcs/sources_1/new/hw5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hw5
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/89277/Desktop/ve270_hw5/project_5/project_5.srcs/sim_1/new/Q5_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Q5_test
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/89277/Desktop/ve270_hw5/project_5/project_5.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto e8c6120328a84b90bb0a942493145817 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Q5_test_behav xil_defaultlib.Q5_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-2572] too many parameters for module instance UUT [C:/Users/89277/Desktop/ve270_hw5/project_5/project_5.srcs/sim_1/new/Q5_test.v:32]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.hw5
+Compiling module xil_defaultlib.Q5_test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Q5_test_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/89277/Desktop/ve270_hw5/project_5/project_5.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Q5_test_behav -key {Behavioral:sim_1:Functional:Q5_test} -tclbatch {Q5_test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Q5_test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Q5_test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1153.227 ; gain = 1.211
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/89277/Desktop/ve270_hw5/project_5/project_5.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Q5_test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/89277/Desktop/ve270_hw5/project_5/project_5.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Q5_test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/89277/Desktop/ve270_hw5/project_5/project_5.srcs/sources_1/new/hw5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hw5
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/89277/Desktop/ve270_hw5/project_5/project_5.srcs/sim_1/new/Q5_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Q5_test
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/89277/Desktop/ve270_hw5/project_5/project_5.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto e8c6120328a84b90bb0a942493145817 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Q5_test_behav xil_defaultlib.Q5_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-2572] too many parameters for module instance UUT [C:/Users/89277/Desktop/ve270_hw5/project_5/project_5.srcs/sim_1/new/Q5_test.v:32]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.hw5
+Compiling module xil_defaultlib.Q5_test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Q5_test_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/89277/Desktop/ve270_hw5/project_5/project_5.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Q5_test_behav -key {Behavioral:sim_1:Functional:Q5_test} -tclbatch {Q5_test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Q5_test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Q5_test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1153.488 ; gain = 0.262
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+current_sim simulation_25
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1153.781 ; gain = 0.000
+close_project
+current_project project_2
+current_sim simulation_13
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 1153.781 ; gain = 0.000
+close_project
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Q4_test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Q4_test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.srcs/sources_1/new/hw4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hw4
+WARNING: [VRFC 10-2379] empty port in module declaration [C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.srcs/sources_1/new/hw4.v:25]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.srcs/sim_1/new/Q4_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Q4_test
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto dde93e2770984043a16b0365ec55a364 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Q4_test_behav xil_defaultlib.Q4_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-2572] too many parameters for module instance UUT [C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.srcs/sim_1/new/Q4_test.v:31]
+ERROR: [VRFC 10-529] concurrent assignment to a non-net D is not permitted [C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.srcs/sim_1/new/Q4_test.v:31]
+ERROR: [VRFC 10-29] hw4 expects 6 arguments [C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.srcs/sim_1/new/Q4_test.v:31]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Q4_test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Q4_test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.srcs/sources_1/new/hw4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hw4
+WARNING: [VRFC 10-2379] empty port in module declaration [C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.srcs/sources_1/new/hw4.v:25]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.srcs/sim_1/new/Q4_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Q4_test
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto dde93e2770984043a16b0365ec55a364 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Q4_test_behav xil_defaultlib.Q4_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-2572] too many parameters for module instance UUT [C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.srcs/sim_1/new/Q4_test.v:30]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.hw4
+Compiling module xil_defaultlib.Q4_test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Q4_test_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Q4_test_behav -key {Behavioral:sim_1:Functional:Q4_test} -tclbatch {Q4_test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Q4_test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Q4_test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1153.781 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 25 01:11:52 2018...

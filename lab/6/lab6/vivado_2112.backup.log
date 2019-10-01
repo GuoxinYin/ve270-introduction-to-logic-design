@@ -1,0 +1,323 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Nov 22 16:00:12 2018
+# Process ID: 2112
+# Current directory: C:/Users/89277/iCloudDrive/Desktop/JI/VE270/lab/6/lab6
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent25440 C:\Users\89277\iCloudDrive\Desktop\JI\VE270\lab\6\lab6\lab6.xpr
+# Log file: C:/Users/89277/iCloudDrive/Desktop/JI/VE270/lab/6/lab6/vivado.log
+# Journal file: C:/Users/89277/iCloudDrive/Desktop/JI/VE270/lab/6/lab6\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/89277/iCloudDrive/Desktop/JI/VE270/lab/6/lab6/lab6.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:09 . Memory (MB): peak = 813.254 ; gain = 79.398
+update_compile_order -fileset sources_1
+reset_run impl_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Couldn't access process for termination
+
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Nov 22 16:00:53 2018...
+Launched impl_1...
+Run output will be captured here: C:/Users/89277/iCloudDrive/Desktop/JI/VE270/lab/6/lab6/lab6.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Thu Nov 22 16:08:08 2018] Launched synth_1...
+Run output will be captured here: C:/Users/89277/iCloudDrive/Desktop/JI/VE270/lab/6/lab6/lab6.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Thu Nov 22 16:09:20 2018] Launched impl_1...
+Run output will be captured here: C:/Users/89277/iCloudDrive/Desktop/JI/VE270/lab/6/lab6/lab6.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Nov 22 16:11:35 2018] Launched impl_1...
+Run output will be captured here: C:/Users/89277/iCloudDrive/Desktop/JI/VE270/lab/6/lab6/lab6.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.2
+  **** Build date : Jun 14 2018-20:42:52
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 860.391 ; gain = 2.492
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A387A5A
+set_property PROGRAM.FILE {C:/Users/89277/iCloudDrive/Desktop/JI/VE270/lab/6/lab6/lab6.runs/impl_1/lab6.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/89277/iCloudDrive/Desktop/JI/VE270/lab/6/lab6/lab6.runs/impl_1/lab6.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Thu Nov 22 16:23:15 2018] Launched synth_1...
+Run output will be captured here: C:/Users/89277/iCloudDrive/Desktop/JI/VE270/lab/6/lab6/lab6.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Thu Nov 22 16:24:08 2018] Launched impl_1...
+Run output will be captured here: C:/Users/89277/iCloudDrive/Desktop/JI/VE270/lab/6/lab6/lab6.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 13 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.061 . Memory (MB): peak = 2349.566 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.061 . Memory (MB): peak = 2349.566 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:36 ; elapsed = 00:00:32 . Memory (MB): peak = 2444.645 ; gain = 898.145
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+place_ports {col[3]} L1
+startgroup
+set_property package_pin "" [get_ports [list  {col[0]}]]
+place_ports {col[2]} P1
+endgroup
+place_ports {col[1]} N3
+place_ports {col[0]} P3
+set_property IOSTANDARD LVCMOS33 [get_ports [list {col[3]} {col[2]} {col[1]} {col[0]}]]
+place_ports {row_out[3]} U3
+place_ports {row_out[2]} W3
+place_ports {row_out[1]} V3
+place_ports {row_out[0]} V13
+save_constraints
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Nov 22 16:28:02 2018] Launched impl_1...
+Run output will be captured here: C:/Users/89277/iCloudDrive/Desktop/JI/VE270/lab/6/lab6/lab6.runs/impl_1/runme.log
+set_property IOSTANDARD LVCMOS33 [get_ports [list {row_out[3]} {row_out[2]} {row_out[1]} {row_out[0]}]]
+save_constraints -force
+reset_run impl_1
+launch_runs impl_1 -jobs 4
+[Thu Nov 22 16:29:32 2018] Launched impl_1...
+Run output will be captured here: C:/Users/89277/iCloudDrive/Desktop/JI/VE270/lab/6/lab6/lab6.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Nov 22 16:32:07 2018] Launched impl_1...
+Run output will be captured here: C:/Users/89277/iCloudDrive/Desktop/JI/VE270/lab/6/lab6/lab6.runs/impl_1/runme.log
+refresh_design
+INFO: [Netlist 29-17] Analyzing 13 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.059 . Memory (MB): peak = 2482.219 ; gain = 0.000
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.060 . Memory (MB): peak = 2482.219 ; gain = 0.000
+refresh_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 2482.219 ; gain = 0.000
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/89277/iCloudDrive/Desktop/JI/VE270/lab/6/lab6/lab6.runs/impl_1/lab6.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Thu Nov 22 16:43:35 2018] Launched synth_1...
+Run output will be captured here: C:/Users/89277/iCloudDrive/Desktop/JI/VE270/lab/6/lab6/lab6.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Thu Nov 22 16:44:56 2018] Launched impl_1...
+Run output will be captured here: C:/Users/89277/iCloudDrive/Desktop/JI/VE270/lab/6/lab6/lab6.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Thu Nov 22 16:47:08 2018] Launched synth_1...
+Run output will be captured here: C:/Users/89277/iCloudDrive/Desktop/JI/VE270/lab/6/lab6/lab6.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Thu Nov 22 16:48:01 2018] Launched impl_1...
+Run output will be captured here: C:/Users/89277/iCloudDrive/Desktop/JI/VE270/lab/6/lab6/lab6.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Nov 22 16:49:26 2018] Launched impl_1...
+Run output will be captured here: C:/Users/89277/iCloudDrive/Desktop/JI/VE270/lab/6/lab6/lab6.runs/impl_1/runme.log
+refresh_design
+INFO: [Netlist 29-17] Analyzing 13 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.060 . Memory (MB): peak = 2491.465 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.060 . Memory (MB): peak = 2491.465 ; gain = 0.000
+refresh_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 2491.934 ; gain = 2.688
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/89277/iCloudDrive/Desktop/JI/VE270/lab/6/lab6/lab6.runs/impl_1/lab6.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Thu Nov 22 16:54:51 2018] Launched synth_1...
+Run output will be captured here: C:/Users/89277/iCloudDrive/Desktop/JI/VE270/lab/6/lab6/lab6.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Thu Nov 22 16:56:05 2018] Launched impl_1...
+Run output will be captured here: C:/Users/89277/iCloudDrive/Desktop/JI/VE270/lab/6/lab6/lab6.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+launch_runs impl_1 -jobs 4
+[Thu Nov 22 16:56:40 2018] Launched impl_1...
+Run output will be captured here: C:/Users/89277/iCloudDrive/Desktop/JI/VE270/lab/6/lab6/lab6.runs/impl_1/runme.log
+close_design
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -jobs 4
+[Thu Nov 22 16:58:55 2018] Launched impl_1...
+Run output will be captured here: C:/Users/89277/iCloudDrive/Desktop/JI/VE270/lab/6/lab6/lab6.runs/impl_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35tcpg236-1
+INFO: [Netlist 29-17] Analyzing 13 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/89277/iCloudDrive/Desktop/JI/VE270/lab/6/lab6/lab6.srcs/constrs_1/new/lab6.xdc]
+Finished Parsing XDC File [C:/Users/89277/iCloudDrive/Desktop/JI/VE270/lab/6/lab6/lab6.srcs/constrs_1/new/lab6.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+place_ports {col_o[2]} V14
+place_ports {col_o[1]} U14
+startgroup
+set_property package_pin "" [get_ports [list  OR_row]]
+place_ports {col_o[0]} U15
+endgroup
+set_property IOSTANDARD LVCMOS33 [get_ports [list {col_o[2]} {col_o[1]} {col_o[0]}]]
+place_ports OR_row W18
+save_constraints
+reset_run impl_1
+launch_runs impl_1 -jobs 4
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.051 . Memory (MB): peak = 2499.520 ; gain = 0.000
+[Thu Nov 22 17:02:02 2018] Launched impl_1...
+Run output will be captured here: C:/Users/89277/iCloudDrive/Desktop/JI/VE270/lab/6/lab6/lab6.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Nov 22 17:04:24 2018] Launched impl_1...
+Run output will be captured here: C:/Users/89277/iCloudDrive/Desktop/JI/VE270/lab/6/lab6/lab6.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/89277/iCloudDrive/Desktop/JI/VE270/lab/6/lab6/lab6.runs/impl_1/lab6.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Thu Nov 22 17:30:39 2018] Launched synth_1...
+Run output will be captured here: C:/Users/89277/iCloudDrive/Desktop/JI/VE270/lab/6/lab6/lab6.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Thu Nov 22 17:31:33 2018] Launched impl_1...
+Run output will be captured here: C:/Users/89277/iCloudDrive/Desktop/JI/VE270/lab/6/lab6/lab6.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Nov 22 17:33:00 2018] Launched impl_1...
+Run output will be captured here: C:/Users/89277/iCloudDrive/Desktop/JI/VE270/lab/6/lab6/lab6.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/89277/iCloudDrive/Desktop/JI/VE270/lab/6/lab6/lab6.runs/impl_1/lab6.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183A387A5A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A387A5A
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/89277/iCloudDrive/Desktop/JI/VE270/lab/6/lab6/lab6.runs/impl_1/lab6.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 13 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.063 . Memory (MB): peak = 2599.844 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.063 . Memory (MB): peak = 2599.844 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Nov 22 19:06:14 2018...

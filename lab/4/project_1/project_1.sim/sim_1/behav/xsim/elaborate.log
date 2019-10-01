@@ -1,0 +1,15 @@
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto cf2aea1ffb0a49c7b77b6b888279c933 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Lab4_test_behav xil_defaultlib.Lab4_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-2572] too many parameters for module instance UUT [C:/Users/89277/iCloudDrive/Desktop/JI/VE270/lab/4/project_1/project_1.srcs/sim_1/new/Lab4_test.v:31]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/89277/iCloudDrive/Desktop/JI/VE270/lab/4/project_1/project_1.srcs/sources_1/new/Lab4.v" Line 1. Module Lab4 doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Lab4
+Compiling module xil_defaultlib.Lab4_test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Lab4_test_behav

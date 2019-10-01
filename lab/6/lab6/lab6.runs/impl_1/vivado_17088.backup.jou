@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Nov 22 16:48:11 2018
+# Process ID: 17088
+# Current directory: C:/Users/89277/iCloudDrive/Desktop/JI/VE270/lab/6/lab6/lab6.runs/impl_1
+# Command line: vivado.exe -log lab6.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source lab6.tcl -notrace
+# Log file: C:/Users/89277/iCloudDrive/Desktop/JI/VE270/lab/6/lab6/lab6.runs/impl_1/lab6.vdi
+# Journal file: C:/Users/89277/iCloudDrive/Desktop/JI/VE270/lab/6/lab6/lab6.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source lab6.tcl -notrace

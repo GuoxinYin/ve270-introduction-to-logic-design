@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed Oct 24 17:18:52 2018
+# Process ID: 1032
+# Current directory: C:/Users/89277/Desktop/ve270_hw5/project_2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12412 C:\Users\89277\Desktop\ve270_hw5\project_2\project_2.xpr
+# Log file: C:/Users/89277/Desktop/ve270_hw5/project_2/vivado.log
+# Journal file: C:/Users/89277/Desktop/ve270_hw5/project_2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/89277/Desktop/ve270_hw5/project_2/project_2.xpr
+update_compile_order -fileset sources_1
+
+close_project
+create_project project_3 C:/Users/89277/Desktop/ve270_hw5/project_3 -part xc7a35tcpg236-1
+file mkdir C:/Users/89277/Desktop/ve270_hw5/project_3/project_3.srcs/sources_1/new
+close [ open C:/Users/89277/Desktop/ve270_hw5/project_3/project_3.srcs/sources_1/new/5_3.v w ]
+add_files C:/Users/89277/Desktop/ve270_hw5/project_3/project_3.srcs/sources_1/new/5_3.v
+update_compile_order -fileset sources_1

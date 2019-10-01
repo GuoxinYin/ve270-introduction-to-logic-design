@@ -1,0 +1,29 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Oct 25 18:06:53 2018
+# Process ID: 14348
+# Current directory: C:/Users/89277/iCloudDrive/Desktop/JI/VE270/lab/4/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16608 C:\Users\89277\iCloudDrive\Desktop\JI\VE270\lab\4\project_1\project_1.xpr
+# Log file: C:/Users/89277/iCloudDrive/Desktop/JI/VE270/lab/4/project_1/vivado.log
+# Journal file: C:/Users/89277/iCloudDrive/Desktop/JI/VE270/lab/4/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/89277/iCloudDrive/Desktop/JI/VE270/lab/4/project_1/project_1.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:09 . Memory (MB): peak = 811.328 ; gain = 55.484
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Thu Oct 25 18:07:42 2018] Launched synth_1...
+Run output will be captured here: C:/Users/89277/iCloudDrive/Desktop/JI/VE270/lab/4/project_1/project_1.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Thu Oct 25 18:09:20 2018] Launched impl_1...
+Run output will be captured here: C:/Users/89277/iCloudDrive/Desktop/JI/VE270/lab/4/project_1/project_1.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 25 18:24:39 2018...

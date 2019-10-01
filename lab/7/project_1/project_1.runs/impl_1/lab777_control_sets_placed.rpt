@@ -1,0 +1,80 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Wed Dec  5 11:44:19 2018
+| Host         : LAPTOP-G1PTGBVK running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file lab777_control_sets_placed.rpt
+| Design       : lab777
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    11 |
+| Unused register locations in slices containing registers |    48 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |            2 |
+|      4 |            2 |
+|     10 |            2 |
+|     12 |            1 |
+|     14 |            1 |
+|    16+ |            3 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              46 |           12 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             110 |           15 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              12 |            2 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------------------+---------------+---------------------+------------------+----------------+
+|        Clock Signal        | Enable Signal |   Set/Reset Signal  | Slice Load Count | Bel Load Count |
++----------------------------+---------------+---------------------+------------------+----------------+
+|  M1/anode[2]               |               |                     |                1 |              2 |
+|  equal_IBUF_BUFG           | M2/indi       | M2/overflow_i_1_n_0 |                1 |              2 |
+|  M2/clock_reg_n_0          |               |                     |                1 |              4 |
+|  M1/clock_reg_n_0          |               |                     |                1 |              4 |
+|  clk_IBUF_BUFG             | M1/ca         | M1/ca[4]_i_1_n_0    |                1 |             10 |
+|  equal_IBUF_BUFG           |               |                     |                2 |             10 |
+|  clk_IBUF_BUFG             |               |                     |                4 |             12 |
+|  M2/cathode_reg[6]_i_2_n_0 |               |                     |                3 |             14 |
+|  clk_IBUF_BUFG             |               | M2/clock_0          |                4 |             30 |
+|  clk_IBUF_BUFG             |               | M1/clock_0          |                4 |             30 |
+|  clk_IBUF_BUFG             |               | M1/ca               |                7 |             50 |
++----------------------------+---------------+---------------------+------------------+----------------+
+
+

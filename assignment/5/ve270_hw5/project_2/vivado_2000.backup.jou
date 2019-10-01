@@ -1,0 +1,151 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed Oct 24 20:51:05 2018
+# Process ID: 2000
+# Current directory: C:/Users/89277/Desktop/ve270_hw5/project_2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7060 C:\Users\89277\Desktop\ve270_hw5\project_2\project_2.xpr
+# Log file: C:/Users/89277/Desktop/ve270_hw5/project_2/vivado.log
+# Journal file: C:/Users/89277/Desktop/ve270_hw5/project_2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/89277/Desktop/ve270_hw5/project_2/project_2.xpr
+update_compile_order -fileset sources_1
+file mkdir C:/Users/89277/Desktop/ve270_hw5/project_2/project_2.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/89277/Desktop/ve270_hw5/project_2/project_2.srcs/sim_1/new/Q2_test.v w ]
+add_files -fileset sim_1 C:/Users/89277/Desktop/ve270_hw5/project_2/project_2.srcs/sim_1/new/Q2_test.v
+update_compile_order -fileset sim_1
+launch_simulation
+source hw2.tcl
+update_compile_order -fileset sim_1
+launch_simulation
+source Q2_test.tcl
+close_sim
+launch_simulation
+source Q2_test.tcl
+open_project C:/Users/89277/Desktop/ve270_hw5/project_1/project_1.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source sim_1.tcl
+close_sim
+close_project
+open_project C:/Users/89277/Desktop/ve270_hw5/project_3/project_3.xpr
+update_compile_order -fileset sources_1
+file mkdir C:/Users/89277/Desktop/ve270_hw5/project_3/project_3.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/89277/Desktop/ve270_hw5/project_3/project_3.srcs/sim_1/new/Q3_test.v w ]
+add_files -fileset sim_1 C:/Users/89277/Desktop/ve270_hw5/project_3/project_3.srcs/sim_1/new/Q3_test.v
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+source Q3_test.tcl
+close_sim
+launch_simulation
+source Q3_test.tcl
+close_sim
+launch_simulation
+source Q3_test.tcl
+close_sim
+close_project
+open_project C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.xpr
+update_compile_order -fileset sources_1
+file mkdir C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.srcs/sim_1/new/Q4_test.v w ]
+add_files -fileset sim_1 C:/Users/89277/Desktop/ve270_hw5/project_4/project_4.srcs/sim_1/new/Q4_test.v
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+source Q4_test.tcl
+close_sim
+launch_simulation
+source Q4_test.tcl
+close_sim
+launch_simulation
+source Q4_test.tcl
+close_sim
+launch_simulation
+source Q4_test.tcl
+close_sim
+launch_simulation
+source Q4_test.tcl
+current_project project_2
+current_sim simulation_3
+close_sim
+launch_simulation
+source Q2_test.tcl
+current_project project_4
+current_sim simulation_12
+close_sim
+launch_simulation
+source Q4_test.tcl
+close_sim
+launch_simulation
+source Q4_test.tcl
+run all
+close_sim
+launch_simulation
+source Q4_test.tcl
+close_sim
+launch_simulation
+source Q4_test.tcl
+close_sim
+launch_simulation
+source Q4_test.tcl
+close_sim
+launch_simulation
+source Q4_test.tcl
+close_sim
+launch_simulation
+source Q4_test.tcl
+close_sim
+launch_simulation
+source Q4_test.tcl
+close_sim
+launch_simulation
+source Q4_test.tcl
+close_sim
+launch_simulation
+source Q4_test.tcl
+close_sim
+launch_simulation
+source Q4_test.tcl
+open_project C:/Users/89277/Desktop/ve270_hw5/project_5/project_5.xpr
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/89277/Desktop/ve270_hw5/project_5/project_5.srcs/sim_1/new/Q5_test.v w ]
+add_files -fileset sim_1 C:/Users/89277/Desktop/ve270_hw5/project_5/project_5.srcs/sim_1/new/Q5_test.v
+update_compile_order -fileset sim_1
+launch_simulation
+source hw5.tcl
+update_compile_order -fileset sim_1
+launch_simulation
+source Q5_test.tcl
+close_sim
+launch_simulation
+source Q5_test.tcl
+close_sim
+launch_simulation
+source Q5_test.tcl
+close_sim
+launch_simulation
+source Q5_test.tcl
+close_sim
+launch_simulation
+source Q5_test.tcl
+close_sim
+current_sim simulation_25
+close_sim
+close_project
+current_project project_2
+current_sim simulation_13
+close_sim
+close_sim
+close_project
+close_sim
+launch_simulation
+launch_simulation
+source Q4_test.tcl
+close_sim

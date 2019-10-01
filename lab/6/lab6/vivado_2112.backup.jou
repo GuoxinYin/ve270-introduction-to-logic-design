@@ -1,0 +1,139 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Nov 22 16:00:12 2018
+# Process ID: 2112
+# Current directory: C:/Users/89277/iCloudDrive/Desktop/JI/VE270/lab/6/lab6
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent25440 C:\Users\89277\iCloudDrive\Desktop\JI\VE270\lab\6\lab6\lab6.xpr
+# Log file: C:/Users/89277/iCloudDrive/Desktop/JI/VE270/lab/6/lab6/vivado.log
+# Journal file: C:/Users/89277/iCloudDrive/Desktop/JI/VE270/lab/6/lab6\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/89277/iCloudDrive/Desktop/JI/VE270/lab/6/lab6/lab6.xpr
+update_compile_order -fileset sources_1
+reset_run impl_1
+-prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/89277/iCloudDrive/Desktop/JI/VE270/lab/6/lab6/lab6.runs/impl_1/lab6.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/89277/iCloudDrive/Desktop/JI/VE270/lab/6/lab6/lab6.runs/impl_1/lab6.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+open_run impl_1
+place_ports {col[3]} L1
+startgroup
+set_property package_pin "" [get_ports [list  {col[0]}]]
+place_ports {col[2]} P1
+endgroup
+place_ports {col[1]} N3
+place_ports {col[0]} P3
+set_property IOSTANDARD LVCMOS33 [get_ports [list {col[3]} {col[2]} {col[1]} {col[0]}]]
+place_ports {row_out[3]} U3
+place_ports {row_out[2]} W3
+place_ports {row_out[1]} V3
+place_ports {row_out[0]} V13
+save_constraints
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property IOSTANDARD LVCMOS33 [get_ports [list {row_out[3]} {row_out[2]} {row_out[1]} {row_out[0]}]]
+save_constraints -force
+reset_run impl_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+refresh_design
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/89277/iCloudDrive/Desktop/JI/VE270/lab/6/lab6/lab6.runs/impl_1/lab6.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+refresh_design
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/89277/iCloudDrive/Desktop/JI/VE270/lab/6/lab6/lab6.runs/impl_1/lab6.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+close_design
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+open_run synth_1 -name synth_1
+place_ports {col_o[2]} V14
+place_ports {col_o[1]} U14
+startgroup
+set_property package_pin "" [get_ports [list  OR_row]]
+place_ports {col_o[0]} U15
+endgroup
+set_property IOSTANDARD LVCMOS33 [get_ports [list {col_o[2]} {col_o[1]} {col_o[0]}]]
+place_ports OR_row W18
+save_constraints
+reset_run impl_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/89277/iCloudDrive/Desktop/JI/VE270/lab/6/lab6/lab6.runs/impl_1/lab6.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/89277/iCloudDrive/Desktop/JI/VE270/lab/6/lab6/lab6.runs/impl_1/lab6.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/89277/iCloudDrive/Desktop/JI/VE270/lab/6/lab6/lab6.runs/impl_1/lab6.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+open_run impl_1
